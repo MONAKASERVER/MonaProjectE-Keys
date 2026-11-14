@@ -4,5 +4,6 @@
   "key.monaprojectekeys.extra_function": "追加機能",
   "key.monaprojectekeys.fire_projectile": "投射能力",
   "key.monaprojectekeys.mode": "モード変更",
-  "key.monaprojectekeys.boots_toggle": "ブーツ能力切替"
+  "key.monaprojectekeys.boots_toggle": "ブーツ能力切替（Shiftで兜）",
+  "key.monaprojectekeys.helmet_toggle": "兜能力切替（直接キー）"
 }

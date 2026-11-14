@@ -16,6 +16,7 @@ public final class MonaProjectEClient implements ClientModInitializer {
     private static KeyMapping fireProjectile;
     private static KeyMapping mode;
     private static KeyMapping bootsOrHelmet;
+    private static KeyMapping helmetDirect;
 
     @Override
     public void onInitializeClient() {
@@ -26,6 +27,7 @@ public final class MonaProjectEClient implements ClientModInitializer {
         fireProjectile = register("fire_projectile", GLFW.GLFW_KEY_R, category);
         mode = register("mode", GLFW.GLFW_KEY_G, category);
         bootsOrHelmet = register("boots_toggle", GLFW.GLFW_KEY_X, category);
+        helmetDirect = register("helmet_toggle", GLFW.GLFW_KEY_UNKNOWN, category);
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             drain(charge, "charge");
@@ -38,6 +40,7 @@ public final class MonaProjectEClient implements ClientModInitializer {
                         || GLFW.glfwGetKey(window, GLFW.GLFW_KEY_RIGHT_SHIFT) == GLFW.GLFW_PRESS;
                 send(shift ? "helmet_toggle" : "boots_toggle");
             }
+            drain(helmetDirect, "helmet_toggle");
         });
     }
 

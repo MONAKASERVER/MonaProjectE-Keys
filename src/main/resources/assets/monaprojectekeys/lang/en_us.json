@@ -4,5 +4,6 @@
   "key.monaprojectekeys.extra_function": "Extra function",
   "key.monaprojectekeys.fire_projectile": "Fire projectile",
   "key.monaprojectekeys.mode": "Change mode",
-  "key.monaprojectekeys.boots_toggle": "Toggle boots / helmet"
+  "key.monaprojectekeys.boots_toggle": "Toggle boots (Shift: helmet)",
+  "key.monaprojectekeys.helmet_toggle": "Toggle helmet (direct key)"
 }
