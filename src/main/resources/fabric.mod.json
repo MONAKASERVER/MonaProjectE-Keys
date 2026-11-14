@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "monaprojectekeys",
+  "version": "${version}",
+  "name": "MonaProjectE Keys",
+  "description": "Original ProjectE key controls for the MONAKA SERVER Paper edition.",
+  "authors": ["MONAKA SERVER"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["net.monacraft.projecte.client.MonaProjectEClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.4",
+    "minecraft": "26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
